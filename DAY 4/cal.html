@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  body{
+    background-image: url("https://i.pinimg.com/originals/8c/43/64/8c43645fe8d0ac164a6925448be32858.jpg");
+}
+
+   .form
+   {
+    margin: 400px;
+     width: 300px;
+     height: 400px;
+     background-color:darkgrey;
+     border: 1px solid black;
+   }
+   .calcu{
+    text-align: center;
+    margin-bottom: 20px;
+
+   }
+</style>
+<body>
+
+  <div class="form">
+    <form >
+      <div class="bd">
+      <header class="calcu">CALCULATOR</header>
+    <label>Enter num1 :</label>
+  <input id="n1" type="text"  placeholder="First Number">
+    <br>
+    <br>
+  
+    <label>Enter num2 :</label>
+    
+    <input id="n2" type="text"  placeholder="Second Number">
+  <br><br>
+  <button type="button" id="AD" onclick="ADD()">ADD</button>
+  <br><br>
+  <button type="button" id="SB" onclick="SUB()">SUB</button>
+  <br><br>
+  <button type="button" id="MULPIPLY" onclick="MULTIPLY()">MULTIPLY</button>
+  <br><br>
+  <button type="button" id="DIVID" onclick="DIVIDE()">DIVIDE</button>
+  <br><br>
+   
+   
+   <label>result:
+   <input id="rlt" type="text">  </label>
+  </div>
+    </form>
+  </div>
+  
+
+
+ <script>
+ function ADD()
+ {
+     var fn1= parseInt(document.getElementById("n1").value);
+     var ln1= parseInt(document.getElementById("n2").value);
+     var FLN=fn1+ln1;
+     document.getElementById("rlt").value=FLN;
+     
+     
+    
+
+ }
+ function SUB()
+ {
+     var fn1= parseInt(document.getElementById("n1").value);
+     var ln1= parseInt(document.getElementById("n2").value);
+     var FLN=fn1-ln1;
+     document.getElementById("rlt").value=FLN;
+     
+}
+function MULTIPLY()
+ {
+     var fn1= parseInt(document.getElementById("n1").value);
+     var ln1= parseInt(document.getElementById("n2").value);
+     var FLN=fn1*ln1;
+     document.getElementById("rlt").value=FLN;
+     
+}
+function DIVIDE()
+ {
+     var fn1= parseInt(document.getElementById("n1").value);
+     var ln1= parseInt(document.getElementById("n2").value);
+     var FLN=fn1/ln1;
+     document.getElementById("rlt").value=FLN;
+     
+}
+ </script>
+</body>
+</html>
